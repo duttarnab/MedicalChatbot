@@ -8,6 +8,14 @@ stories:
   - action: utter_greet
   - intent: mood_great
   - action: utter_happy
-  - intent: diseases_question
-  - action: action_diseases_question
+  - intent: cough_question
+  - action: utter_cough_question
+  - intent: jaundice_question
+  - action: utter_jaundice_question
+  - intent: malaria_question
+  - action: utter_malaria_question
+  - intent: diabetes_question
+  - action: utter_diabetes_question
+  - intent: high_blood_pressue_question
+  - action: utter_high_blood_pressue_question
   

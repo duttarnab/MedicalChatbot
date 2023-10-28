@@ -90,14 +90,27 @@ nlu:
     - am I talking to a bot?
     - am I talking to a human?
 
-- intent: diseases_question
+- intent: cough_question
   examples: |
-    - What is the remedy of [cough]{"entity": "diseases"}
-    - What is the remedy of [jaundice]{"entity": "diseases"}
-    - What is the remedy of [diabetes]{"entity": "diseases"}
-    - What is the remedy of [malaria]{"entity": "diseases"}
-    - What is the remedy of [high blood pressue]{"entity": "diseases"}
-    - [high blood pressue]{"entity": "diseases"}
-    - I am suffering from [high blood pressue]{"entity": "diseases"}
-    - How I can control [high blood pressue]{"entity": "diseases"}
+    - What is the remedy of cough
+    - cough
 
+- intent: diabetes_question
+  examples: |
+    - What is the remedy of diabetes
+    - diabetes
+
+- intent: jaundice_question
+  examples: |
+    - What is the remedy of jaundice
+    - jaundice
+
+- intent: malaria_question
+  examples: |
+    - What is the remedy of malaria
+    - malaria
+
+- intent: high_blood_pressue_question
+  examples: |
+    - What is the remedy of high blood pressue
+    - high blood pressue

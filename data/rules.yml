@@ -7,7 +7,27 @@ rules:
   - intent: goodbye
   - action: utter_goodbye
 
-- rule: Diseases question
+- rule: cough_question
   steps:
-  - intent: diseases_question
-  - action: action_diseases_question
+  - intent: cough_question
+  - action: utter_cough_question
+
+- rule: jaundice_question
+  steps:
+  - intent: jaundice_question
+  - action: utter_jaundice_question
+
+- rule: malaria_question
+  steps:
+  - intent: malaria_question
+  - action: utter_malaria_question
+
+- rule: diabetes_question
+  steps:
+  - intent: diabetes_question
+  - action: utter_diabetes_question
+
+- rule: high_blood_pressue_question
+  steps:
+  - intent: high_blood_pressue_question
+  - action: utter_high_blood_pressue_question
