@@ -1,0 +1,41 @@
+<html>
+    <head>
+		
+	</head>
+	<body>
+		<style>
+			.rw-conversation-container .rw-header{background-color:#6EC1E4;}
+			.rw-conversation-container .rw-messages-container .rw-message .rw-client{background-color: #6EC1E4;}
+			.rw-launcher{background-color: #6EC1E4;}
+			.rw-conversation-container .rw-reply{background-color: hsla(145, 100%, 39%, 1); border: 1px solid #6EC1E4;}
+		</style>
+	<!--<div id="rasa-chat-widget" data-websocket-url="http://localhost:5005"></div>
+    <script src="https://unpkg.com/@rasahq/rasa-chat" type="application/javascript"></script>-->
+	
+	<script>!(function () {
+		let e = document.createElement("script"),
+		  t = document.head || document.getElementsByTagName("head")[0];
+		(e.src =
+		  "https://cdn.jsdelivr.net/npm/rasa-webchat@1.0.1/lib/index.js"),
+		  // Replace 1.x.x with the version that you want
+		  (e.async = !0),
+		  (e.onload = () => {
+			window.WebChat.default(
+			  {
+				initPayload: "/greet",
+				customData: { language: "en" },
+				socketUrl: "http://localhost:5005",
+				socketPath: "/socket.io/",
+          title: "Gluu Chatbot",
+          subtitle: "Document Assistant.",
+          params: {"storage": "session"}
+				// add other props here
+			  },
+			  null
+			);
+		  }),
+		  t.insertBefore(e, t.firstChild);
+	  })();
+	  </script>
+	</body>
+</html>
